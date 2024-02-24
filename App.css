@@ -1,0 +1,110 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Spartan", sans-serif;
+}
+
+.App {
+  text-align: center;
+}
+
+.planets-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 20px;
+}
+
+.load-more {
+  padding: 10px;
+  margin: 20px;
+  cursor: pointer;
+  background-color: #fff;
+  color: #000;
+  border: 1px solid #fff;
+  border-radius: 4px;
+  transition: 0.2s;
+}
+
+.load-more:hover {
+  background-color: #088178;
+  color: #fff;
+}
+
+.navbar {
+  background-color: rgb(175, 176, 218);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+  z-index: 999;
+  position: sticky;
+  top: 0;
+  left: 0;
+  padding: 10px;
+  color: #fff;
+  text-align: center;
+  display: flex;
+  justify-content: space-between; 
+}
+
+
+input {
+  padding: 5px;
+  margin-right: 10px;
+  border: 1px solid #fff; 
+  border-radius: 4px;
+  transition: 0.2s;
+}
+
+input:hover {
+  border: 1px solid #088178; 
+}
+
+
+select {
+  padding: 5px;
+  border: 1px solid #fff; 
+  transition: 0.2s;
+}
+
+select:hover {
+  border: 1px solid #088178; 
+}
+
+.footer {
+  background-color: #333;
+  padding: 10px;
+  color: #fff;
+  text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+  .planets-container {
+    margin: 10px;
+  }
+
+  .planet-card {
+    width: 100%;
+    margin: 10px 0;
+  }
+
+  .resident-list {
+    flex-direction: column;
+  }
+
+  .resident-card {
+    width: 100%;
+    margin: 5px 0;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .footer {
+    flex-direction: column;
+    align-items: center;
+  }
+}
